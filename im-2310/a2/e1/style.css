@@ -1,0 +1,61 @@
+.container { 
+    display: grid;
+    width: 71vh;
+    height: 100vh;
+    background-color: rgb(236, 236, 236);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.4fr 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 7px;
+    row-gap: 15px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "One One Two Two Two"
+    "One One Two Two Two"
+    "One One Three Three Three"
+    "Four Five Five Five Six"
+    "Four Five Five Five Six"
+    "Four Five Five Five Six"
+    "Seven Seven Seven Seven Seven"
+    "Seven Seven Seven Seven Seven"
+    "Seven Seven Seven Seven Seven"; 
+    margin-left: auto;
+    margin-right: auto;
+  
+    box-sizing: border-box;
+  }
+
+
+  
+  :root{
+    --co101: rgb(255, 0, 0);
+    --co102: rgb(13, 0, 255);
+    --co103: rgb(0, 0, 0);
+    --co104: rgb(255, 255, 255);
+    --border: 20px solid var(--co102);
+  }
+  
+  .One { border-width: 4px; border-style: solid; grid-area: One; background-image: linear-gradient(var(--co103), var(--co104), var(--co104), var(--co101), var(--co102), var(--co104), var(--co104), var(--co103));}
+  
+  .Two { border-width: 4px; border-style: solid; grid-area: Two; background: radial-gradient(var(--co101) 10px, var(--co102) 50%, var(--co103) 50%);}
+  
+  .Three { border-width: 4px; border-style: solid; grid-area: Three; background: linear-gradient(
+    to left,
+    var(--co101) 20%,
+    var(--co102) 30%,
+    var(--co102) 45%,
+    var(--co103) 55%,
+    var(--co103) 70%,
+    var(--co104) 80%
+  );}
+  
+  .Four { border-width: 4px; border-style: solid; grid-area: Four; background: conic-gradient(at 0% 30%, var(--co104) 10%, var(--co101) 30%, var(--co102) 50%);}
+  
+  .Five { border-width: 4px; border-style: solid; grid-area: Five; background: linear-gradient(60deg, var(--co101), var(--co102));}
+  
+  .Six { border-width: 4px; border-style: solid; grid-area: Six;  background: conic-gradient(at 0% 30%, var(--co103) 10%, var(--co102) 30%, var(--co101) 50%);}
+  
+  .Seven { border-width: 4px; border-style: solid; grid-area: Seven; 
+    background: linear-gradient(to right, transparent, rgb(255, 255, 255)),
+      url("img1.png");}
+
+ 
