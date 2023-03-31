@@ -1,8 +1,10 @@
+/*I made the container in CSS to link HTML. 
+Also, I wrote the layout's specific size, background colour, grid configuration, gap width, etc.*/
 .container { 
     display: grid;
     width: 71vh;
     height: 100vh;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(221, 215, 215);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.4fr 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 7px;
@@ -20,20 +22,23 @@
     "Seven Seven Seven Seven Seven"; 
     margin-left: auto;
     margin-right: auto;
-  
     box-sizing: border-box;
   }
 
-
-  
+/*I selected red, blue, black, and white as the colour composition for the layout grid cells. 
+  The reason for choosing these colours is to represent 'Taegeukgi', the national flag of Korea.
+  In addition, the design system was established by redefining the colours obtained from 'Taegeukgi' using the root. 
+  And I applied it to each grid cell below.*/
   :root{
     --co101: rgb(255, 0, 0);
     --co102: rgb(13, 0, 255);
     --co103: rgb(0, 0, 0);
     --co104: rgb(255, 255, 255);
-    --border: 20px solid var(--co102);
+    --border: 20px solid var(--co103);
   }
-  
+
+  /*The experience of redefining colours by building a design system was convenient for me. 
+   This is because when applying colour to each grid cell, type in the defined name, and it will be applied quickly without having to find them individually.*/
   .One { border-width: 4px; border-style: solid; grid-area: One; background-image: linear-gradient(var(--co103), var(--co104), var(--co104), var(--co101), var(--co102), var(--co104), var(--co104), var(--co103));}
   
   .Two { border-width: 4px; border-style: solid; grid-area: Two; background: radial-gradient(var(--co101) 10px, var(--co102) 50%, var(--co103) 50%);}
