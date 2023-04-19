@@ -1,0 +1,150 @@
+
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+
+}
+
+:root{
+  --col-01:#51797a;
+  --col-02:#ffffff;
+  --col-03:#000000;
+  --col-04:#dceadc;
+  --col-05:#700a78;
+  --col-06:rgb(29, 24, 66);
+  --border: 1px solid var(--col-02);
+} 
+
+body{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-05);
+  padding: 2vw;
+}
+
+
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+}
+
+.FilterSection{
+ color: var(--col-04);
+ cursor: pointer;
+}
+
+.FilterBox{
+  color: var(--col-04);
+  cursor: pointer;
+}
+
+.FilterButton{
+color: var(--col-03);
+cursor: pointer;
+}
+
+.SelectedFilter{
+  
+}
+
+.RecipeLink{
+font-family: 'Lobster', cursive;
+color: var(--col-02);
+background: var(--col-03);
+}
+
+.RecipeName{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-02);
+}
+
+.Author{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-02);
+}
+
+.RecipeImageContainer{
+ 
+}
+
+
+.RecipeImg{
+
+}
+
+.Attribution{
+  font-family: 'Arvo', serif;
+  color: var(--col-03);
+  background: var(--col-04);
+}
+
+.Publisher{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.Cuisine{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.TimeToCook{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.SkillLevel{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.Course{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.Servings{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.Dietary{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.DatePublished{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.DateUpdated{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+.SpecialEquipment{
+  font-family: 'Arvo', serif;
+  color: var(--col-06);
+  background: var(--col-04);
+}
+
+
+  
