@@ -4,11 +4,25 @@
 
   PROVIDE MEANINGFUL FEEDBACK TO THE FOLLOWING ELEMENTS:
   1) <button> with the id of load-link on the loading page (index.html)
+    I made the text in the box easy for users to recognise. 
+    And when the mouse cursor is placed on the box, the shape changes to a pointer. 
+    It is set up to interact with users, making it easier to recognise as a clickable button.
+
   2) <div> with the id of load-throbber on the loading page (index.html)
+     I changed the cursor shape to "Waiting" to show the interaction that the page is working while waiting for the user to click the button and go to the Hosono page.
+     In addition, I extended the user's patience by providing animation effects so that the user does not get bored while waiting for the page to turn.
+
   3) <li> inside of the <ol> inside of the <nav> on the information page (hosono.html)
+     I changed the shape of the mouse cursor to a "pointer" to allow users to interact with the numbered lists as a clickable list. 
+     Users will know that the lists are clickable when they place their cursor over the text and notice that it changes to a "pointer".
+
   4) <button> with the id of mode-button on the information page (hosono.html)
+     I set up an interactive text "for your convenience" that explains how users can change the screen mode according to their taste when viewing the screen.
+     And I made a box and the font bigger so that users can clearly recognise it as a button.
+
   5) switchModes() function - hint you can add a transition CSS property to the <body> and it will be inherited 
      by all the elements inside, so when custom CSS variables are changed it will apply transition
+     I added the transition CSS property to make it inherited by all elements, especially mouse hover and active effects, so users can interact with Hosono photos.
 
 -->
 
@@ -37,7 +51,7 @@
         The function loadPageAfterDelay() is declared in the file fakeLoad.js - it takes a number value that sets the 
         amount of time it takes in ms and a url to redirect to.
       -->
-      <button id="load-link" onclick="loadPageAfterDelay(3, './hosono.html')">Click to Load Page</button>
+      <button id="load-link" onclick="loadPageAfterDelay(5000, './hosono.html')">exploring</button>
 
       <!--
         This is a div we're using for the throbber - if we wanted to do a % based loading bar there is an element 

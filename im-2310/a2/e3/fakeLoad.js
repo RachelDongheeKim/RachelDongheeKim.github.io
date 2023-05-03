@@ -10,11 +10,11 @@ function loadPageAfterDelay(loadTime, url){
   // show throbber
   document.getElementById("load-throbber").style.display = 'block';
   document.getElementById("load-throbber-example-1").style.display = 'block';
-  document.getElementById("#load-throbber-example-2").style.display = 'block';
-  document.getElementById("#load-throbber-example-3").style.display = 'block';
-  document.getElementById("#load-throbber-example-4").style.display = 'block';
-  document.getElementById("#load-throbber-example-5").style.display = 'block';
-  document.getElementById("#load-throbber-example-6").style.display = 'block';
+  document.getElementById("load-throbber-example-2").style.display = 'block';
+  document.getElementById("load-throbber-example-3").style.display = 'block';
+  document.getElementById("load-throbber-example-4").style.display = 'block';
+  document.getElementById("load-throbber-example-5").style.display = 'block';
+  document.getElementById("load-throbber-example-6").style.display = 'block';
 
   /* if you want to add or change anything else once link is clicked below here is where you'd do so */
   /* then the second part is actually following the link using a setTimeout() */
