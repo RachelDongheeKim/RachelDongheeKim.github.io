@@ -4,19 +4,141 @@
 
     <head>
 
-       <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta charset="UTF-8">
 
+
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <title>Making coffee with Rachel</title>
+       
        <link rel="stylesheet" href="style.css">
 
-       <script src="script.js"></script>
+       <script src="main.js" defer></script>
+<!--Navigation button-->
+       <nav>
+        <a href="#A3_link">Drawing before learn ! </a>
+        <br>
+        <br>
+         <a href="#A4_link">How to make good latte</a>
+         <br>
+         <br>
+        <a href="#A1_link">About this Browser-based Interactive Project</a>
+         <br>
+         <br>
+     </nav>
+
 
     </head>
 
     <body>
+<!--Mouse hover and change the image-->
+   <img src="Before.jpg" alt="Rachel" onmouseover="this.src='After.jpg';" onmouseout="this.src='Before.jpg';">
 
-       <h1>This is a test</h1>
+<!--website heading and I made center with page outline such as align and padding-->
+      <div class="center">
+       <h1><strong>Making coffee with Rachel</strong></h1>
+       <h2><strong>Interactive Media 1 <br> Assignment 3</strong></h2>
+       <h2><strong>s3872092 Rachel Donghee Kim</strong></h2>
+  </div>
+     
+  <div class="center">
+<p>Click the nav button for further information</p>
+</div>
+
+<!--coffee Images-->
+       <p><img src="img/img1.jpeg" width="300" height="500" alt="img1" class="center"></p>
+       <p><img src="img/img2.jpeg" width="300" height="650" alt="img2" class="center"></p>
+<!--My instagram link-->
+       <p><i><a class="center" href="https://www.instagram.com/coffee_class_rachel/" target="_blank">Rachel's coffee class Instagram</a></i></p>
+       <br>
+       <br>
+       <br>
+
+       <div class="center">
+        <ul>
+          <li><h3 id="A3_link">Drawig before learn ! </h3></li>
+          </ul>
+  <!--drawing board setting-->    
+      <p style="background-color: beige;"><strong>Drawing board</strong></p>
+      <p>Before learn how to make coffee, let's draw coffee ! 
+        <br>
+        Click, drag the mouse and draw what coffee you are going to make !
+      </p>
+      <div class="field">
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+          <button type="button" class="button">Undo</button>
+          <button type="button" class="button">Clear</button>
+
+          <div class="color-field" style="background: red;"></div>
+          <div class="color-field" style="background: blue;"></div>
+          <div class="color-field" style="background: green;"></div>
+          <div class="color-field" style="background: yellow;"></div>
+
+          <input type="color" class="color-picker">
+          <input type="range" min="1" max="100" class="pen-range">
+        </div>
+      </div>
+      
+      <!--button to navigate on top-->
+       <a class="center" href="#top" class="top" aria-label="Back to top" title="Back to top">↑</a>
+       <br>
+       <br>
+       <br>
+
+       <ul>
+       <li><h3 id="A4_link">How to make good latte</h3></li>
+       </ul>
+       </div>
+
+       <div class="center">
+       <p style="background-color: beige;"><strong>Let's learn how to make latte</strong></p>
+       <p>
+         click the play button to explore how to extract espresso and steam the milk
+      <!--audio source for how to make good latte-->
+         <audio src="audio/coffee.mp3"controls>
+       </p>
+      </div>
+      <br>
+       <div class="center">
+       <p style="background-color: beige;"><strong>Let's watch the video how to steam the milk</strong></p>
+       <p>click the play button to explore how to steam the milk and make swan latte art<br>
+      <!--video source for how to steam the milk and make swan latte art-->
+          <video src="video/img2.mp4" width="250" height="500" controls>
+       </p>
+       </div>
+
+       <a class="center" href="#top" class="top" aria-label="Back to top" title="Back to top">↑</a>
+      
+       <br>
+       <br>
+       <br>
+       <div class="center">
+       <ul>
+       <li><h3 id="A1_link">About this Browser-based Interactive Project</h3></li>
+       </ul>
+       </div>
+
+       <div class="center">
+       <p style="background-color:#fffacd;"><strong>discussing my specific design decisions</strong></p>
+       <p>
+       Click the play button to explore my design decisions
+       <!--audio source for discussing my design decisions-->
+       <br>
+       <audio src="audio/AIvoice.mp3"controls>
+      </p>
+       </div>
+
+       <a class="center" href="#top" class="top" aria-label="Back to top" title="Back to top">↑</a>
+    
+       <p>Reference
+        <br>
+        Ai Voice Generator: Best text to speech: Lovo Ai (no date) AI Voice Generator: Best Text to Speech | LOVO AI. Available at: https://lovo.ai/ (Accessed: 18 May 2023). 
+       </p>
+
 
 
     </body>
 
 </html>
+
