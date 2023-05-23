@@ -12,8 +12,8 @@
        <title>Making coffee with Rachel</title>
        
        <link rel="stylesheet" href="style.css">
+      
 
-       <script src="main.js" defer></script>
 <!--Navigation button-->
        <nav>
         <a href="#A3_link">Drawing before learn ! </a>
@@ -62,24 +62,32 @@
       <p style="background-color: beige;"><strong>Drawing board</strong></p>
       <p>Before learn how to make coffee, let's draw coffee ! 
         <br>
-        Click, drag the mouse and draw what coffee you are going to make !
+        Click, drag the mouse and draw what coffee you are going to make ! <br>
+        * If the painting does not work, increase the window size and refresh *
       </p>
-      <div class="field">
+      <div class="canvas">
+        <div id="canvas-wrapper">
         <canvas id="canvas"></canvas>
-        <div class="tools">
-          <button type="button" class="button">Undo</button>
-          <button type="button" class="button">Clear</button>
-
-          <div class="color-field" style="background: red;"></div>
-          <div class="color-field" style="background: blue;"></div>
-          <div class="color-field" style="background: green;"></div>
-          <div class="color-field" style="background: yellow;"></div>
-
-          <input type="color" class="color-picker">
-          <input type="range" min="1" max="100" class="pen-range">
         </div>
+        <br>
+      <!--brush selecing (colour and size) tool setting-->
+        <div id="brush-controls">
+
+          <input id="colour-picker" type="color" />
+
+          <input id="size-picker" type="range" 
+                 min="1" max="50" />
+
+          </div>
+
+          
+        <script src="script.js"></script>
+
+        
       </div>
-      
+      <br>
+      <br>
+      <br>
       <!--button to navigate on top-->
        <a class="center" href="#top" class="top" aria-label="Back to top" title="Back to top">↑</a>
        <br>
@@ -124,7 +132,6 @@
        <p>
        Click the play button to explore my design decisions
        <!--audio source for discussing my design decisions-->
-       <br>
        <audio src="audio/AIvoice.mp3"controls>
       </p>
        </div>
