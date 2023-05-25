@@ -4,7 +4,8 @@ const ctx = canvas.getContext('2d');
 const colourPicker = document.getElementById("colour-picker");
 const sizePicker = document.getElementById("size-picker");
 
-
+ /* var canvasBox = canvas.getBoundingClientRect(); - I want to modify the mouse sensitive, but
+ If I use this, brush doesn't work*/ 
 canvas.width = canvas.parentElement.clientWidth;
 canvas.height = canvas.parentElement.clientHeight;
 
@@ -20,8 +21,8 @@ ctx.lineCap = 'round';
 window.addEventListener('resize', function(){
     /* when rezise the canvas, the drawned line is maintained*/
     var tempCanvas = ctx.getImageData(0,0,canvas.width, canvas.height);
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;  /*  canvas.width = canvas.parentElement.clientWidth; - If I use this, brush doesn't work*/
+    canvas.height = window.innerHeight; /*  canvas.height = canvas.parentElement.clientHeight; - If I use this, brush doesn't work*/
        /* when rezise the canvas, the drawned line is maintained*/
     ctx.putImageData(tempCanvas, 0, 0);
 });
@@ -34,6 +35,7 @@ const mouse = {
 }
 canvas.addEventListener('mousedown', function(event){
   ctx.beginPath();
+  console.log("test")
   ctx.fillStyle = brushColour;
   ctx.strokeStyle = brushColour;
   ctx.lineWidth = brushSize;
@@ -68,3 +70,6 @@ colourPicker.addEventListener('input', function(event){
 sizePicker.addEventListener('input', function(event){
     brushSize = event.target.value;
  });
+
+
+ 
