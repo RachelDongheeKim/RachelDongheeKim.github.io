@@ -21,11 +21,16 @@ body {
 
 canvas {
    box-shadow: -3px 2px 9px 6px rgb(255, 255, 255);
-   background-color: white;
    cursor: pointer;
    width: 100%;
    height: 100%;
+
   }
+
+#canvas-wrapper{
+  background-image: url("./img/pic.png");
+}
+
 
 
 .center {
@@ -49,4 +54,115 @@ top: 25%;
 left: 25%;
 width: 50%;
 height: 50%;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+ transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.foreground {
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ z-index: -1;
+}
+
+.title {
+  font-size: 7rem;
+  color: pink;
+  text-shadow: 0 0 5px black;
+}
+
+section {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #e6cef0;
+  color: palevioletred;
+}
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.menu-icon {        
+  padding: 16px;
+  border: none;
+  cursor: pointer;    
+}
+
+.menu-icon-bar1, .menu-icon-bar2, .menu-icon-bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+  margin: 6px 0;        
+}
+
+
+.dropdown {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  float:right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fbcff5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(86, 10, 86);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(80, 12, 85);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #012118;
+  color:#fcfdfd; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#video {
+  display: none;
+  cursor: pointer;
+}
+
+#videohover{
+  cursor: pointer;
+}
+
+
+#audio {
+  display: none;
+}
+
+#audiohover {
+  cursor: pointer;
 }

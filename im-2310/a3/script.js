@@ -71,5 +71,15 @@ sizePicker.addEventListener('input', function(event){
     brushSize = event.target.value;
  });
 
+ const video = document.getElementById("video");
+ const videohover = document.getElementById("videohover");
+ videohover.addEventListener('mouseenter', function(){
+   video.style.display="block";
+});
 
- 
+const audio = document.getElementById("audio");
+const audiohover = document.getElementById("audiohover");
+audiohover.addEventListener('mouseenter', function(){
+  audio.style.display="block";
+});
+

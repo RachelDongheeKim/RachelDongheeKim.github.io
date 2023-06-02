@@ -14,25 +14,44 @@
        <link rel="stylesheet" href="style.css">
       
 
-<!--Navigation button-->
-       <nav>
-        <a href="#A3_link">Drawing before learn ! </a>
-        <br>
-        <br>
-         <a href="#A4_link">How to make good latte</a>
-         <br>
-         <br>
-        <a href="#A1_link">About this Browser-based Interactive Project</a>
-         <br>
-         <br>
-     </nav>
-
 
     </head>
 
     <body>
+      <div class="wrapper">
+        <header>
+          <img src="img/coffee2.jpg" class="background">
+          <img src="img/coffee1.png" class="foreground">
+          <h1 class="title">Welcome! <br> Rachel's Coffee class</h1>
+        </header>
+      </div>
+
+
+<section>
+<!--Dropdown menu-->
+       <nav>
+    <div class="dropdown">
+
+      <div class="menu-icon">
+        <div class="menu-icon-bar1"></div>
+        <div class="menu-icon-bar2"></div>
+        <div class="menu-icon-bar3"></div>
+      </div>
+
+      <div class="dropdown-content">
+        <a href="#A3_link">Drawing before learn ! </a>
+        <a href="#A4_link">How to make good latte</a>        
+        <a href="#A1_link">About this Browser-based Interactive Project</a>
+      </div>
+
+    </div>
+     </nav>
+    </section>
+    
 <!--Mouse hover and change the image-->
+<div class="center">
    <img src="Before.jpg" alt="Rachel" onmouseover="this.src='After.jpg';" onmouseout="this.src='Before.jpg';">
+</div>
 
 <!--website heading and I made center with page outline such as align and padding-->
       <div class="center">
@@ -42,7 +61,7 @@
   </div>
      
   <div class="center">
-<p>Click the nav button for further information</p>
+<p>Click the dropdown menu right on the top for further information</p>
 </div>
 
 <!--coffee Images-->
@@ -63,7 +82,7 @@
       <p>Before learn how to make coffee, let's draw coffee ! 
         <br>
         Click, drag the mouse and draw what coffee you are going to make ! <br>
-        * If the painting does not work, increase the window size and refresh *
+        * If the painting does not work, maximise the window size and refresh *
       </p>
       <div class="canvas">
         <div id="canvas-wrapper">
@@ -100,22 +119,23 @@
        </div>
 
        <div class="center">
-       <p style="background-color: beige;"><strong>Let's learn how to make latte</strong></p>
+       <p style="background-color: beige;"><strong id="audiohover">Let's learn how to make latte - mouse hover it</strong></p>
        <p>
-         click the play button to explore how to extract espresso and steam the milk
+         click the play button to explore how to extract espresso and steam the milk<br>
       <!--audio source for how to make good latte-->
-         <audio src="audio/coffee.mp3"controls>
+      <br>
+         <audio id="audio" src="audio/coffee.mp3"controls>
        </p>
       </div>
       <br>
        <div class="center">
-       <p style="background-color: beige;"><strong>Let's watch the video how to steam the milk</strong></p>
+       <p style="background-color: beige;"><strong id="videohover">Let's watch the video how to steam the milk - mouse hover it</strong></p>
        <p>click the play button to explore how to steam the milk and make swan latte art<br>
       <!--video source for how to steam the milk and make swan latte art-->
-          <video src="video/img2.mp4" width="250" height="500" controls>
+          <video id="video" src="video/img2.mp4" width="250" height="500" controls>
        </p>
        </div>
-
+<br>
        <a class="center" href="#top" class="top" aria-label="Back to top" title="Back to top">↑</a>
       
        <br>
@@ -128,19 +148,29 @@
        </div>
 
        <div class="center">
-       <p style="background-color:#fffacd;"><strong>discussing my specific design decisions</strong></p>
+       <p style="background-color:#fffacd;"><strong>discussing my specific design decisions </strong></p>
        <p>
-       Click the play button to explore my design decisions
+       Click the play button to explore my design decisions<br>
        <!--audio source for discussing my design decisions-->
-       <audio src="audio/AIvoice.mp3"controls>
+       <br>
+       <audio src="audio/aivoice.mp3"controls>
       </p>
        </div>
 
-       <a class="center" href="#top" class="top" aria-label="Back to top" title="Back to top">↑</a>
-    
+       <div class="center">
+      <p style="background-color: #fffacd;"><strong>discussing my specific design decisions 2</strong></p>
+      <p>
+        Click the play button to explore my design decisions2<br>
+      <!--audio source for discussing my design decisions-->
+      <br>
+      <audio src="audio/aivoice2.wav"controls></audio>
+      </p>
+       </div>
+      <br>
+
        <p>Reference
         <br>
-        Ai Voice Generator: Best text to speech: Lovo Ai (no date) AI Voice Generator: Best Text to Speech | LOVO AI. Available at: https://lovo.ai/ (Accessed: 18 May 2023). 
+        Ai Voice Generator: Best text to speech: Lovo Ai (no date) AI Voice Generator: Best Text to Speech | LOVO AI. Available at: https://lovo.ai/ (Accessed: 01 June 2023). 
        </p>
 
 
